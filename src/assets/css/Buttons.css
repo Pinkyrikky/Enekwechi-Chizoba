@@ -1,0 +1,20 @@
+button{
+    padding: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    padding-inline: 4em;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.black{
+    background-color: rgb(254, 160, 176);
+    color: white;
+    margin-right: 0.3em;
+
+}
+
+.white{
+    background-color: white;
+}
