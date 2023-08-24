@@ -24,22 +24,33 @@ import Slider from "react-slick";
 //     }
 //   }
 
-  function App() {
-    const [statement, setStatement]= useState(menuIcon)
-    const [dropdown, setDropdown] = useState({display : 'none'})
-    function addition(){
-      if(statement=== menuIcon){
-        setStatement(close)
-        setDropdown({
-          ...dropdown, display : "block"
-        })
+  // function App() {
+  //   const [statement, setStatement]= useState(menuIcon)
+  //   const [dropdown, setDropdown] = useState({display : 'none'})
+  //   function addition(){
+  //     if(statement=== menuIcon){
+  //       setStatement(close)
+  //       setDropdown({
+  //         ...dropdown, display : "block"
+  //       })
+  //     }else{
+  //       setStatement(menuIcon)
+  //       setDropdown({
+  //         ...dropdown, display: "none"
+  //       })
+  //     }
+  //   }
+
+  function App(){
+    const [open, setOpen] =useState (false)
+    function dropdown(){
+      if(open){
+        setOpen(false)
       }else{
-        setStatement(menuIcon)
-        setDropdown({
-          ...dropdown, display: "none"
-        })
+        setOpen(true)
       }
     }
+  
 
     
   return (
@@ -47,9 +58,10 @@ import Slider from "react-slick";
       <section>
         <Header />
         <div className="imgSide">
-       <div className="hamburg">
-       <img className="hamburger" src={statement} alt="hamburger icon" onClick={addition}/>
-          <div style= {dropdown} className="dropdown">
+       <div className="hamburg" onClick={dropdown}>
+       {!open && <img className="hamburger" src={menuIcon} alt="hamburger icon" />}
+       {open && <img className="hamburger" src={close} alt="hamburger icon" />}
+        {open && <div  className="dropdown">
             <ul>
               <li>Home</li>
               <li>About</li>
@@ -59,7 +71,7 @@ import Slider from "react-slick";
               <li>Blogs</li>
               <li>Contact</li>
             </ul>
-          </div>
+          </div>}
        </div>
         <img className="pic" src={pic2} alt="" />
         </div>
@@ -67,6 +79,7 @@ import Slider from "react-slick";
     </>
   );
 }
+
 
 export default App;
 
