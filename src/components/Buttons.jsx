@@ -12,6 +12,7 @@ export default Buttonwhite;
 
 
 export function ButtonBlack() {
+
   return (
     <button className='black'>More About Me &#8594;</button>
   )
