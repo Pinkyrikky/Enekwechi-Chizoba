@@ -33,5 +33,18 @@ footer{
 }
 
 span{
-    color:rgb(254, 160, 176); ;
+    color:rgb(254, 160, 176);
+}
+
+@media only screen and (max-width:992px) {
+    .section{
+        z-index: 1;
+    }
+    h1{
+        font-size: 3em;
+    }
+    .house{
+        position: absolute;
+        margin: auto;
+    }
 }

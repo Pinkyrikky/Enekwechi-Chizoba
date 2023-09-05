@@ -6,6 +6,7 @@ function Header() {
   return (
     <>
       <div className="section">
+        <div className="house">
         <div className="header">Pinky.</div>
         <div className="web">WEB DESIGNER & DEVELOPER</div>
         <h1>I'm Chizoba Enekwechi</h1>
@@ -14,6 +15,7 @@ function Header() {
         <footer>
         Copyright ©2023 All rights reserved  | This portfolio belongs to <span>Pinky</span>
         </footer>
+        </div>
       </div>
     </>
   );

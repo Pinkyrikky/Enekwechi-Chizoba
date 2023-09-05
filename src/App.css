@@ -31,7 +31,7 @@ body{
 }
 
 .pic{
-  width: 100%;
+  width: 100vh;
   height: 100%;
   margin: auto;
 }
@@ -56,4 +56,18 @@ li{
 }
 li:hover{
   color: rgb(254, 160, 176);
+}
+
+@media only screen and (max-width:992px) {
+  .pic{
+    position: absolute;
+    width: 991px;
+    left: 0;
+    
+  }
+}
+
+.link{
+  text-decoration: none;
+  color: rgb(139, 138, 138);
 }
