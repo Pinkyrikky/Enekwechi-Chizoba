@@ -8,20 +8,24 @@
 .header{
     font-weight: bolder;
     font-size: 1.5em;
-    padding-block:1em 6em ;
+    /* padding-block:1em 6em ; */
     margin-bottom: 0;
+    position: absolute;
+    left:6em;
+    top:1em
 }
 
 .web{
     color: rgb(254, 160, 176);
     font-weight: bolder;
     letter-spacing: 0.2em;
+    padding-top: 13em;
 }
-h1{
+.h1{
     
     font-size: 5.7em;
     font-weight:bolder;
-    color: #222222;
+    color:var(--black);
     line-height: 1em;
     padding-bottom: 0.5em;
 }
@@ -39,12 +43,41 @@ span{
 @media only screen and (max-width:992px) {
     .section{
         z-index: 1;
+        width: 50vw;
     }
     h1{
         font-size: 3em;
     }
     .house{
         position: absolute;
-        margin: auto;
+        text-align: center;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    .header{
+        color: white;
+        left: 0.4em;
+        top: 0.4em
+      }
+    
+    .h1{
+        font-size: 4.5em;
+        font-weight:bold ;
+    }
+    footer{
+        bottom: 0;
+        color: white;
+        z-index: 1;
+        right: 0;
+        left:0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .h1{
+        font-size: 2em;
     }
 }

@@ -4,10 +4,16 @@ import "./App.css";
 
 import pic1 from '../src/pictures/pic1.png'
 import pic2 from '../src/pictures/IMG_4687-removebg2.png'
-import React, {useState } from "react";
+import React, {useState, useRef } from "react";
 
 import Navbar from "./components/Navbar";
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Autoplay, Navigation } from 'swiper/modules';
 
 function Home() {
     
@@ -16,11 +22,29 @@ function Home() {
     
   return (
     <>
+     <Navbar />
       <section>
         <Header />
         <div className="imgSide">
-        <Navbar />
-        <img className="pic" src={pic2} alt="" />
+       
+        <div className="pic">
+        <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+       
+        // navigation={true}
+        modules={[Autoplay,Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide ><img className="pic" src={pic2}/></SwiperSlide>
+        <SwiperSlide ><img className="pic" src={pic1}/></SwiperSlide>
+        
+      </Swiper>
+        </div>
         </div>
       </section>
 

@@ -15,6 +15,8 @@ export default function Navbar() {
     }
   return (
     <>
+    <div className='nav'>
+    <div className="header">Pinky.</div>
         <div className="hamburg" onClick={dropdown}>
        {!open && <img className="hamburger" src={menuIcon} alt="hamburger icon" />}
        {open && <img className="hamburger" src={close} alt="hamburger icon" />}
@@ -29,6 +31,7 @@ export default function Navbar() {
             </ul>
           </div>}
        </div>
+    </div>
     </>
   )
 }

@@ -7,18 +7,26 @@ function Header() {
     <>
       <div className="section">
         <div className="house">
-        <div className="header">Pinky.</div>
+        
         <div className="web">WEB DESIGNER & DEVELOPER</div>
-        <h1>I'm Chizoba Enekwechi</h1>
+        <h1 className="h1">I'm Chizoba Enekwechi</h1>
         <ButtonBlack />
         <Buttonwhite />
-        <footer>
-        Copyright ©2023 All rights reserved  | This portfolio belongs to <span>Pinky</span>
-        </footer>
+       
         </div>
       </div>
+      <Footer/>
     </>
   );
 }
 
 export default Header;
+
+
+export function Footer() {
+  return(
+    <footer>
+        Copyright ©2023 All rights reserved  | This portfolio belongs to <span>Pinky</span>
+        </footer>
+  )
+}
