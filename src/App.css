@@ -181,6 +181,16 @@ li{
     bottom: 0;
     left: 0;
   }
+
+  .swiper .swiper-slide img {
+    width: 50vh;
+    height: 50vh;
+  }
+
+  .pic{
+    top:-4em;
+    background-color: red;
+  }
   
 }
 
