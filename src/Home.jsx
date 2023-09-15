@@ -28,7 +28,7 @@ function Home() {
         <div className="imgSide">
        
         <div className="pic">
-        <Swiper
+        <Swiper className="swiper"
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
@@ -38,10 +38,10 @@ function Home() {
        
         // navigation={true}
         modules={[Autoplay,Navigation]}
-        className="mySwiper"
+        
       >
-        <SwiperSlide ><img className="pic" src={pic2}/></SwiperSlide>
-        <SwiperSlide ><img className="pic" src={pic1}/></SwiperSlide>
+        <SwiperSlide ><img  src={pic2}/></SwiperSlide>
+        <SwiperSlide ><img  src={pic1}/></SwiperSlide>
         
       </Swiper>
         </div>
