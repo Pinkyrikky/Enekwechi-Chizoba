@@ -183,13 +183,21 @@ li{
   }
 
   .swiper .swiper-slide img {
-    width: 50vh;
-    height: 50vh;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: green; */
+  }
+
+  .swiper{
+    bottom: 0
   }
 
   .pic{
+    width: 100vw;
+    height: 100vw;
     top:-4em;
-    background-color: red;
+    /* background-color: red; */
+    /* left: -100em */
   }
   
 }

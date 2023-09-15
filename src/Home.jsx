@@ -45,6 +45,7 @@ function Home() {
         
       </Swiper>
         </div>
+        {/* <img src={pic2} alt="" /> */}
         </div>
       </section>
 
