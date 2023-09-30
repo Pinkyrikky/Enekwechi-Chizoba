@@ -12,10 +12,10 @@ function Header() {
         <h1 className="h1">I'm Chizoba Enekwechi</h1>
         <ButtonBlack />
         <Buttonwhite />
-       
+        <Footer/>
         </div>
       </div>
-      <Footer/>
+      
     </>
   );
 }

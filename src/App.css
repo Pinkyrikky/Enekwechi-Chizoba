@@ -19,6 +19,8 @@ section{
 
 .imgSide{
   background-color: var(--pink);
+  display: flex;
+  align-items: flex-end;
  
 }
 body{
@@ -192,11 +194,11 @@ li{
 
   .pic{
     width: 100vw;
-    height: 100%;
-    top:-4em;
+    height: 100vw;
+    
     bottom: 0;
-    /* background-color: red; */
-    /* left: -100em */
+    
+
   }
   
 }

@@ -27,7 +27,7 @@ function Home() {
         <Header />
         <div className="imgSide">
        
-        <div >
+        {/* <div > */}
         {/* <Swiper className="swiper"
         spaceBetween={30}
         centeredSlides={true}
@@ -44,7 +44,7 @@ function Home() {
         <SwiperSlide ><img  src={pic1}/></SwiperSlide>
         
       </Swiper> */}
-        </div>
+        {/* </div> */}
         <img src={pic2} alt="" className="pic"/>
         </div>
       </section>

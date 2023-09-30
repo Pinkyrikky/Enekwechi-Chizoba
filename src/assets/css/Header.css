@@ -23,7 +23,7 @@
 }
 .h1{
     
-    font-size: 5.7em;
+    font-size: 6vw;
     font-weight:bolder;
     color:var(--black);
     line-height: 1em;
@@ -32,8 +32,8 @@
 
 footer{
     color: hsl(227, 24%, 66%);
-    position: absolute;
-    bottom: 1em;
+    font-size: 0.8em;
+   padding-top:4em;
 }
 
 span{
