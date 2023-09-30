@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 import menuIcon from '../../src/pictures/menuIcon2.svg'
 import close from '../../src/pictures/x-thin-svgrepo-com.svg'
+import mediaMenuIcon from '../pictures/icons8-menu.svg'
+import mediaClose from '../pictures/icons8-close.svg'
 export default function Navbar() {
 
     const [open, setOpen] =useState (false)
@@ -18,8 +20,8 @@ export default function Navbar() {
     <div className='nav'>
     <div className="header">Pinky.</div>
         <div className="hamburg" onClick={dropdown}>
-       {!open && <img className="hamburger" src={menuIcon} alt="hamburger icon" />}
-       {open && <img className="hamburger" src={close} alt="hamburger icon" />}
+       {!open && <><img className="hamburger desktop" src={menuIcon} alt="hamburger icon" /><img className="hamburger tablet" src={mediaMenuIcon} alt="hamburger icon" /></>}
+       {open && <><img className="hamburger desktop" src={close} alt="hamburger icon" /><img className="hamburger tablet" src={mediaClose} alt="hamburger icon" /></>}
         {open && <div  className="dropdown">
             <ul>
               <li><Link to="/" className="link">Home</Link></li>

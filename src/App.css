@@ -33,6 +33,11 @@ body{
   width: 1.3em;
   right: 0;
 }
+
+.tablet{
+  display: none;
+} 
+
 .hamburg{
   position: absolute;
   right: 6em;
@@ -152,6 +157,15 @@ li{
     top:1.5em;
     
   }
+
+  .desktop{
+    display: none;
+  }
+
+  .tablet{
+    display: block;
+  }
+
   .dropdown{
     height: 100%;
     width:100vw ;
