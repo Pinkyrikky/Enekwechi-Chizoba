@@ -27,8 +27,8 @@ function Home() {
         <Header />
         <div className="imgSide">
        
-        <div className="pic">
-        <Swiper className="swiper"
+        <div >
+        {/* <Swiper className="swiper"
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
@@ -43,9 +43,9 @@ function Home() {
         <SwiperSlide ><img  src={pic2}/></SwiperSlide>
         <SwiperSlide ><img  src={pic1}/></SwiperSlide>
         
-      </Swiper>
+      </Swiper> */}
         </div>
-        {/* <img src={pic2} alt="" /> */}
+        <img src={pic2} alt="" className="pic"/>
         </div>
       </section>
 
@@ -53,7 +53,9 @@ function Home() {
     </>
   );
 }
-  
+
+{/* <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-564px, 0px, 0px); transition-delay: 0ms;"><div class="swiper-slide swiper-slide-prev" style="width: 534px; margin-right: 30px;"><img src="/src/pictures/IMG_4687-removebg2.png"></div><div class="swiper-slide swiper-slide-active" style="width: 534px; margin-right: 30px;"><img src="/src/pictures/pic1.png"></div></div>
+   */}
 
 export default Home
 
