@@ -7,6 +7,7 @@ import Experiences from "./pages/Experiences";
 import Services from "./pages/Services";
 import Work from "./pages/Work";
 import { Route, Routes } from "react-router-dom";
+import { ButtonBlack } from "./components/Buttons";
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
       <Route path="/Experiences" element={<Experiences/>}/>
       <Route path='/Work' element={<Work/>}/>
       <Route path="/Contact" element={<Contact/>}/>
+      <Route path="/About" element={<ButtonBlack/>}/>
      </Routes>
       
       
