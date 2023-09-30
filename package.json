@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "react": "^18.2.0",
     "react-burger-menu": "^3.0.9",
+    "react-countup": "^6.4.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.1",
     "react-slick": "^0.29.0",
