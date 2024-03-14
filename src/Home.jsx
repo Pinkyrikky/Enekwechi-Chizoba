@@ -1,9 +1,9 @@
 
 import Header from "./components/Header";
 import "./App.css";
-import pic1 from '../src/assets/pictures/Untitled16_202403111105372.png'
+import pic1 from '../src/assets/pictures/Untitled16_20240311110537.png'
 
-import pic2 from '../src/assets/pictures/Untitled15_202403140859582.png'
+import pic2 from '../src/assets/pictures/Untitled15_20240314085958.png'
 import React, {useState, useRef } from "react";
 
 import Navbar from "./components/Navbar";
@@ -27,12 +27,12 @@ function Home() {
         <Header />
         <div className="imgSide">
        
-        <div >
+        <div className="pic" >
         <Swiper className="swiper"
-        spaceBetween={30}
+        spaceBetween={0}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
        
