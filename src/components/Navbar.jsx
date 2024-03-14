@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 import { Link } from "react-router-dom";
 
-import menuIcon from '../../src/pictures/menuIcon2.svg'
-import close from '../../src/pictures/x-thin-svgrepo-com.svg'
-import mediaMenuIcon from '../pictures/icons8-menu.svg'
-import mediaClose from '../pictures/icons8-close.svg'
+import menuIcon from '../assets/pictures/menuIcon.svg'
+import close from '../assets/pictures/x-thin-svgrepo-com.svg'
+import mediaMenuIcon from '../assets/pictures/icons8-menu.svg'
+import mediaClose from '../assets/pictures/icons8-close.svg'
 export default function Navbar() {
 
     const [open, setOpen] =useState (false)
