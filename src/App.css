@@ -15,7 +15,11 @@ section{
   grid-template-columns: repeat(2, 1fr);
   height: 100vh;
   width: 100%;
+  padding: 0;
+  overflow: hidden;
+  
 }
+
 
 .imgSide{
   background-color: var(--pink);
@@ -41,7 +45,8 @@ body{
 .hamburg{
   position: absolute;
   right: 6em;
-  top: 3em
+  top: 3em;
+  z-index: 3;
 }
 
 
@@ -127,7 +132,7 @@ li{
 @media screen and (max-width:992px) {
   .pic {
     position: absolute;
-    width: 100dvh;
+    width: 100vw;
     height: 100vh;
     left: 0;
     right: 0;
@@ -209,8 +214,8 @@ li{
 
   .pic{
     width: 100vw;
-    height: 100vw;
-    
+    height: 80vh;
+    overflow: hidden;
     bottom: 0;
     
 
