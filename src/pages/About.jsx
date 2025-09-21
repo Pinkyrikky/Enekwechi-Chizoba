@@ -6,7 +6,6 @@ import { Footer } from '../components/Header'
 export default function About() {
   return (
    <>
-    <Navbar/>
     <AboutUs/>
     {/* <Footer /> */}
    </>

@@ -1,12 +1,11 @@
 
-import Header from "./components/Header";
-import "./App.css";
-import pic1 from '../src/assets/pictures/Untitled16_202403111105372.png'
+import "../App.css";
+import pic1 from '../../src/assets/pictures/Untitled16_202403111105372.png'
 
-import pic2 from '../src/assets/pictures/Untitled15_202403140859582.png'
+import pic2 from '../../src/assets/pictures/Untitled15_202403140859582.png'
 import React, {useState, useRef } from "react";
 
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -14,6 +13,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Navigation } from 'swiper/modules';
+import Header from "../components/Header";
 
 function Home() {
     

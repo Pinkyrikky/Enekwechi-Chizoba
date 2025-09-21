@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 import { Link } from "react-router-dom";
 
 import menuIcon from '../assets/pictures/menuIcon.svg'
@@ -26,9 +26,7 @@ export default function Navbar() {
             <ul>
               <li><Link to="/" className="link">Home</Link></li>
               <li><Link to='/About' className="link">About</Link></li>
-              <li><Link to="/Services" className="link">Services</Link></li>
               <li><Link to='/Experiences' className="link">Experiences</Link></li>
-              <li><Link to='/Work' className="link">Work</Link></li>
               <li><Link to='/Contact' className="link">Contact</Link></li>
             </ul>
           </div>}
