@@ -1,9 +1,8 @@
 
 import "../App.css";
-import pic1 from '../../src/assets/pictures/Untitled16_202403111105372.png'
+import pic1 from '../../src/assets/images/Untitled16_202403111105372.png'
 
-import pic2 from '../../src/assets/pictures/Untitled15_202403140859582.png'
-import React, {useState, useRef } from "react";
+import pic2 from '../../src/assets/images/Untitled15_202403140859582.png'
 
 import Navbar from "../components/Navbar";
 

@@ -80,7 +80,7 @@ export default function AboutUs() {
           </div>
           <button className="black">
             <a
-              href="/cv.pdf"
+              href="/Enekwechi-chizoba-cv.pdf"
               download="Chizoba_Enekwechi_CV.pdf"
               className="black"
             >
