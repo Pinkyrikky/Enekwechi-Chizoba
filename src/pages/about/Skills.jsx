@@ -10,14 +10,14 @@ function Skills() {
     AOS.init({ duration: 1000, once: true });
   }, []);
   return (
-    <div className=""  data-aos="fade-up" data-aos-delay="200">
+    <div className="mt-20 md:mt-10"  data-aos="fade-up" data-aos-delay="200">
       <p className="skills">SKILLS</p>
     <h1 style={{textAlign:"center", fontSize:'50px', color:"#323232"}}>My skills</h1>
 
       <div
-        //   className="text-xl font-normal px-5 pb-12 grid grid-cols-1 gap-8 sm:px-9 md:px-10 md:grid-cols-2"
-        //   data-aos="fade-up"
-        style={{fontSize:"22px", display:"grid",  gridTemplateColumns:"repeat(3, 1fr)", gap:"40px", padding:"4em"}}
+          className="text-xl font-normal px-5 pb-12 grid grid-cols-1 md:grid-cols-3 gap-8 sm:px-9 md:px-10 md:grid-cols-2 p-[4em]"
+          data-aos="fade-up"
+        style={{fontSize:"22px", gap:"40px"}}
         >
           <div>
             <p className="text-start text-sm font-medium">HTML5</p>

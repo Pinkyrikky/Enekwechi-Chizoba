@@ -14,13 +14,13 @@ function AppRoute() {
   return (
     <>
      <Routes>
-                <Route element={<DashBoardLayout />}>
       <Route path="/" element={<Home/>} />
+                <Route element={<DashBoardLayout />}>
                 
       <Route path="/About" element={<About/>} />
+      <Route path="/Experiences" element={<Experiences/>}/>
                 </Route>
       <Route path="/Services" element={<Services/>}/>
-      <Route path="/Experiences" element={<Experiences/>}/>
       <Route path='/Work' element={<Work/>}/>
       <Route path="/Contact" element={<Contact/>}/>
       <Route path="/About" element={<ButtonBlack/>}/>

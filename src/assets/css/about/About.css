@@ -32,6 +32,10 @@
     font-weight: bolder;
 }
 
+.aboutMe>button{
+    width: 100%;
+}
+
 .aboutMe>h4{
     color: var(--pink);
     letter-spacing: 0.1em;
@@ -88,6 +92,45 @@
     border-radius: 28px;
     background-color: var(--pink);
     height: 10px;
+}
+
+@media only screen and (max-width:992px) {
+.AboutUs{
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1em;
+
+}
+
+.happyClient{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2em;
+    position: relative;
+}
+
+.happyClient>div{
+    background: white;
+    width: 97%;
+    height: 12em;
+    text-align: center;
+    padding-block:3em;
+}
+.qualification{
+  grid-column: span 1
+}
+.info{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2em;
+    margin-bottom: 3em;
+}
+
+.info>div{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 2.5em;
+    font-weight: bold;
+}
 }
 
 

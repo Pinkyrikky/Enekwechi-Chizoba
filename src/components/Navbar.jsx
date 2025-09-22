@@ -21,7 +21,7 @@ export default function Navbar() {
 
         <div className="hamburg " onClick={dropdown}>
           {!open ? (
-            <div className="pr-2 p-5 w-8 lg:w-fit">
+            <div className=" w-8 lg:w-fit">
               <GiHamburgerMenu className="text-white lg:text-black " />
             </div>
           ) : (
