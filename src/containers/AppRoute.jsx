@@ -14,8 +14,8 @@ function AppRoute() {
   return (
     <>
      <Routes>
-      <Route path="/" element={<Home/>} />
                 <Route element={<DashBoardLayout />}>
+      <Route path="/" element={<Home/>} />
                 
       <Route path="/About" element={<About/>} />
                 </Route>

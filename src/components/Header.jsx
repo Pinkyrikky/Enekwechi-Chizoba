@@ -1,4 +1,3 @@
-import React from "react";
 import Buttonwhite, { ButtonBlack } from "./Buttons";
 import "../assets/css/Header.css";
 
@@ -9,9 +8,12 @@ function Header() {
         <div className="house">
         
         <div className="web">WEB DESIGNER & DEVELOPER</div>
-        <h1 className="h1">I'm Chizoba Enekwechi</h1>
-        <ButtonBlack />
+        <h1 className="h1">I&apos;m Chizoba Enekwechi</h1>
+       
+       <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start">
+         <ButtonBlack />
         <Buttonwhite />
+       </div>
         <Footer/>
         </div>
       </div>

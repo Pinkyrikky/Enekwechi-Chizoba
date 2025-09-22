@@ -1,3 +1,4 @@
+import React from "react";
 
 import "../App.css";
 import pic1 from '../../src/assets/images/Untitled16_202403111105372.png'
@@ -21,7 +22,6 @@ function Home() {
     
   return (
     <>
-     <Navbar />
       <section>
         <Header />
         <div className="imgSide">

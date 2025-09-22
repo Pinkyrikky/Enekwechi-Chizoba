@@ -7,8 +7,8 @@
 
 .AboutUs{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 6em;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4em;
     gap:2em
 }
 
@@ -20,7 +20,7 @@
 
 .happyClient>div{
     background: white;
-    width: 19em;
+    width: 14em;
     height: 12em;
     text-align: center;
     padding-block:3em;
@@ -59,6 +59,35 @@
     grid-template-columns: 1fr 2fr;
     height: 2.5em;
     font-weight: bold;
+}
+
+.qualification{
+  grid-column: span 2
+}
+
+.skills{
+    text-align: center;
+    color: var(--pink);
+    font-weight: 700;
+}
+
+.skillsAcquired{
+
+}
+
+.skillLevelContainer{
+    /* rounded-xl bg-altBgMedium mt-3 */
+    border-radius: 28px;
+    margin-top : 6px;
+    background-color: rgb(164, 162, 162);
+    height: 10px;
+}
+
+.skillLevel{
+    /* bg-textLight w-[80%] py-1 rounded-xl */
+    border-radius: 28px;
+    background-color: var(--pink);
+    height: 10px;
 }
 
 

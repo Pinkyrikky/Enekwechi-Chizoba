@@ -1,8 +1,18 @@
 import "../../assets/css/about/About.css";
 import CountUp from "react-countup";
 import "animate.css";
+import Skills from "./Skills";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function AboutUs() {
+    useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
+  
   return (
     <>
       <h2 className="About">About Us</h2>
@@ -45,7 +55,8 @@ export default function AboutUs() {
         </div>
 
         {/* About Me Section */}
-        <div className="aboutMe animate__animated animate__fadeInUp animate__delay-1s">
+        <div className="qualification aboutMe "
+        data-aos="fade-up" data-aos-delay="100" >
           <h4>ABOUT ME</h4>
           <h1>A Web Designer & Developer Based In Nigeria</h1>
           <p>
@@ -55,27 +66,27 @@ export default function AboutUs() {
           <div className="info">
             <div>
               <p>Name:</p>
-              <span>Chizoba Chukwunaza Enekwechi</span>
+              <span style={{fontWeight:400}}>Chizoba Chukwunaza Enekwechi</span>
             </div>
             <div>
               <p>Date of Birth:</p>
-              <span>29 January, 1999</span>
+              <span style={{fontWeight:400}}>29 January, 1999</span>
             </div>
             <div>
               <p>Address:</p>
-              <span>49 Umushi Street, Awka, Anambra State</span>
+              <span style={{fontWeight:400}}>49 Umushi Street, Awka, Anambra State</span>
             </div>
             <div>
               <p>Zip Code:</p>
-              <span>45789</span>
+              <span style={{fontWeight:400}}>45789</span>
             </div>
             <div>
               <p>Email:</p>
-              <span>rikkypinky20@gmail.com</span>
+              <span style={{fontWeight:400}}>rikkypinky20@gmail.com</span>
             </div>
             <div>
               <p>Phone:</p>
-              <span>07080786147</span>
+              <span style={{fontWeight:400}}>07080786147</span>
             </div>
           </div>
           <button className="black">
@@ -83,12 +94,15 @@ export default function AboutUs() {
               href="/Enekwechi-chizoba-cv.pdf"
               download="Chizoba_Enekwechi_CV.pdf"
               className="black"
+              style={{textDecoration:"none"}}
             >
               Download CV
             </a>
           </button>
         </div>
       </div>
+
+      <Skills />
     </>
   );
 }
