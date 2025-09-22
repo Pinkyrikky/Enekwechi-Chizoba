@@ -2,7 +2,7 @@ import Location from "../components/Location";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import { FaWhatsapp, FaTwitter, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
+import { FaWhatsapp, FaTwitter, FaLinkedin, FaPhoneAlt, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 export default function Contact() {
@@ -29,7 +29,7 @@ export default function Contact() {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          Reach out to us through any of the platforms below.
+         Reach out to us through any of the platforms below. we&apos;d be happy to collaborate and work alongside your team.
         </p>
       </div>
 
@@ -76,13 +76,26 @@ export default function Contact() {
         {/* Phone */}
         <a
           href="tel:+2347080786147"
-          className="flex items-center gap-4 p-4 rounded-xl border hover:bg-gray-200 transition"
+          className="flex items-center gap-4 p-4 rounded-xl border hover:bg-gray-300 transition"
           data-aos="fade-up"
           data-aos-delay="500"
         >
           <FaPhoneAlt className="text-gray-700 text-2xl" />
-          <p className="text-gray-700">Phone</p>
+          <p className="text-gray-600">Phone</p>
         </a>
+
+          <a
+          href="https://github.com/pinkyrikky"
+          className="flex items-center gap-4 p-4 rounded-xl border hover:bg-gray-100 transition"
+          target="_blank"
+          rel="noopener noreferrer"
+            data-aos="fade-up"
+          data-aos-delay="600"
+        >
+          <FaGithub className="text-black text-2xl" />
+          <p className="text-gray-700">GitHub</p>
+        </a>
+
 
          {/* Twitter */}
         <a
