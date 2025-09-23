@@ -58,6 +58,11 @@ export default function Navbar() {
                   </Link>
                 </li>
                 <li>
+                  <Link to="/Works" className="link">
+                    Works
+                  </Link>
+                </li>
+                <li>
                   <Link to="/Contact" className="link">
                     Contact
                   </Link>

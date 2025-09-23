@@ -6,6 +6,7 @@ import Skills from "./Skills";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Location from "../../components/Location";
 
 export default function AboutUs() {
     useEffect(() => {
@@ -15,7 +16,9 @@ export default function AboutUs() {
   
   return (
     <>
-      <h2 className="About">About Us</h2>
+      <div className="block mt-20 md:mt-60">
+        <Location />
+       <p className="mt-2 text-4xl text-center font-bold"  data-aos="fade-up" data-aos-delay="200">About Me</p>
       <div className="AboutUs">
         {/* Stats Section */}
         <div className="happyClient aboutMe animate__animated animate__fadeInUp animate__faster">
@@ -57,10 +60,10 @@ export default function AboutUs() {
         {/* About Me Section */}
         <div className="qualification aboutMe "
         data-aos="fade-up" data-aos-delay="100" >
-          <h4>ABOUT ME</h4>
+          <h4>Hey there 👋</h4>
           <h1>A Web Designer & Developer Based In Nigeria</h1>
           <p>
-            I am a Web Designer. I specialize in JavaScript, TypeScript, React
+            I am a Web Developer. I specialize in JavaScript, TypeScript, React
             and Next.js.
           </p>
           <div className="info">
@@ -103,6 +106,8 @@ export default function AboutUs() {
       </div>
 
       <Skills />
+      </div>
+
     </>
   );
 }

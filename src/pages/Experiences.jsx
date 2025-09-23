@@ -10,7 +10,7 @@ import { useEffect } from "react";
 
 export default function Experiences() {
      useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 1000 });
   }, []);
   return (
     <>

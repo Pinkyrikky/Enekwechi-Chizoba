@@ -18,7 +18,7 @@ function AppRoute() {
       <Route path="/About" element={<About/>} />
       <Route path="/Experiences" element={<Experiences/>}/>
       <Route path="/Contact" element={<Contact/>}/>
-      <Route path='/Work' element={<Work/>}/>
+      <Route path='/Works' element={<Work/>}/>
                 </Route>
      </Routes>
       
