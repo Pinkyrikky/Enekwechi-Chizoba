@@ -1,6 +1,6 @@
 import Buttonwhite, { ButtonBlack } from "./Buttons";
 import "../assets/css/Header.css";
-import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -14,7 +14,9 @@ function Header() {
        
        <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start">
          <ButtonBlack />
+       <Link to= "/Contact">
         <Buttonwhite />
+       </Link>
        </div>
         <Footer/>
         </div>
