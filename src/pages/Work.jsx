@@ -11,6 +11,7 @@ const projects = [
     description: "Official website for Scrella — a phone insurance company.",
     image: "/scrella.png",
     link: "https://scrella.com",
+    technologies: "React, Typescript, Redux, Tailwind",
   },
   {
     id: 2,
