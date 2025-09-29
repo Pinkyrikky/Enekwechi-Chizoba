@@ -47,6 +47,14 @@ const projects = [
     technologies: "React, JavaScript, Tailwind",
     impact: "Designed and developed a personal portfolio to showcase professional work and growth in frontend development.",
   },
+   {
+    id: 6,
+    title: "Cartolink Pixel Perfect Challenge",
+    description: "Built a pixel-perfect recreation of a Cartolink design with support for light and dark mode.",
+    image: "/cartolink.png",
+    technologies: "React, TypeScript, Tailwind",
+    impact: "Enhanced ability to translate complex UI designs into responsive, production-ready code. Strengthened knowledge of theme switching, accessibility practices, and pixel-perfect alignment, demonstrating attention to detail and adaptability in real-world scenarios.",
+  },
 ];
 
 
