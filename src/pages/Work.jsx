@@ -12,8 +12,7 @@ const projects = [
     image: "/scrella.png",
     link: "https://scrella.com",
     technologies: "React, Typescript, Redux, Tailwind",
-    impact:
-      "Helped increase customer engagement by simplifying insurance plan selection, leading to improved conversions.",
+    impact: "Developed scalable and responsive Vendor and End-User applications, improving usability for both businesses and customers.",
   },
   {
     id: 2,
@@ -22,18 +21,15 @@ const projects = [
     image: "/paygym.png",
     link: "https://paygymapp.com",
     technologies: "React, Typescript, Next.js, Tailwind",
-    impact:
-      "Streamlined gym management for owners and members, reducing manual errors and boosting member retention.",
+    impact: "Designed and built both the main platform and Admin portal, ensuring mobile responsiveness and enhancing accessibility across devices.",
   },
   {
     id: 3,
     title: "Bill Breeze",
-    description:
-      "A modern platform for managing bill payments, with extended features tailored for hospital use.",
+    description: "A modern platform for managing bill payments, with extended features tailored for hospital use.",
     image: "/billbreeze.png",
     technologies: "React, Typescript, Redux, Tailwind",
-    impact:
-      "Enabled hospitals to efficiently manage patient billing, reducing payment delays and administrative workload.",
+    impact: "Contributed to Admin and End-User apps while assisting in designing the official website with Next.js, optimizing performance and accessibility.",
   },
   {
     id: 4,
@@ -41,8 +37,7 @@ const projects = [
     description: "An engaging game website with dynamic interactions.",
     image: "/gamex.png",
     technologies: "React, Typescript, Tanstack React Query, Tailwind",
-    impact:
-      "Delivered an interactive gaming experience that increased daily active users and session duration.",
+    impact: "Built Admin and End-User applications with focus on clean UI/UX and efficient data handling for seamless gameplay experiences.",
   },
   {
     id: 5,
@@ -50,10 +45,10 @@ const projects = [
     description: "My personal portfolio showcasing my skills and projects.",
     image: "/portfolio.png",
     technologies: "React, JavaScript, Tailwind",
-    impact:
-      "Provided a professional online presence to highlight my skills, projects, and achievements.",
+    impact: "Designed and developed a personal portfolio to showcase professional work and growth in frontend development.",
   },
 ];
+
 
 
 export default function Work() {
