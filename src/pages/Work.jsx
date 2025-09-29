@@ -12,6 +12,8 @@ const projects = [
     image: "/scrella.png",
     link: "https://scrella.com",
     technologies: "React, Typescript, Redux, Tailwind",
+    impact:
+      "Helped increase customer engagement by simplifying insurance plan selection, leading to improved conversions.",
   },
   {
     id: 2,
@@ -19,16 +21,19 @@ const projects = [
     description: "A web platform for managing gym memberships and schedules.",
     image: "/paygym.png",
     link: "https://paygymapp.com",
-    technologies: "React, Typescript, next.js, Tailwind",
-
+    technologies: "React, Typescript, Next.js, Tailwind",
+    impact:
+      "Streamlined gym management for owners and members, reducing manual errors and boosting member retention.",
   },
   {
     id: 3,
     title: "Bill Breeze",
-    description: "A modern platform for managing bill payments, with extended features tailored for hospital use.",
+    description:
+      "A modern platform for managing bill payments, with extended features tailored for hospital use.",
     image: "/billbreeze.png",
-      technologies: "React, Typescript, Redux, Tailwind",
-
+    technologies: "React, Typescript, Redux, Tailwind",
+    impact:
+      "Enabled hospitals to efficiently manage patient billing, reducing payment delays and administrative workload.",
   },
   {
     id: 4,
@@ -36,8 +41,8 @@ const projects = [
     description: "An engaging game website with dynamic interactions.",
     image: "/gamex.png",
     technologies: "React, Typescript, Tanstack React Query, Tailwind",
-
-    // no link → will show "Work in Progress"
+    impact:
+      "Delivered an interactive gaming experience that increased daily active users and session duration.",
   },
   {
     id: 5,
@@ -45,8 +50,11 @@ const projects = [
     description: "My personal portfolio showcasing my skills and projects.",
     image: "/portfolio.png",
     technologies: "React, JavaScript, Tailwind",
+    impact:
+      "Provided a professional online presence to highlight my skills, projects, and achievements.",
   },
 ];
+
 
 export default function Work() {
   // useEffect(() => {
@@ -112,12 +120,19 @@ export default function Work() {
       {project.technologies.split(",").map((tech, index) => (
         <p
           key={index}
-          className="px-3 py-1 text-xs rounded-full border  text-gray-400 font-medium"
+          className="px-3 py-1 text-xs rounded-full border text-gray-500 font-medium"
         >
           {tech.trim()}
         </p>
       ))}
     </div>
+  )}
+
+  {/* Impact */}
+  {project.impact && (
+    <p className="mt-4 text-sm italic text-gray-600">
+      <span className="font-semibold text-gray-800">Impact:</span> {project.impact}
+    </p>
   )}
 
   {/* Links */}
@@ -131,11 +146,12 @@ export default function Work() {
       Visit Site <FaLink className="ml-2" />
     </a>
   ) : project.title !== "Portfolio Website" ? (
-    <span className="mt-6 inline-block text-gray-500 italic">
+    <p className="mt-6 inline-block text-pink-500 italic">
       Work in Progress
-    </span>
+    </p>
   ) : null}
 </div>
+
 
             </div>
           ))}
