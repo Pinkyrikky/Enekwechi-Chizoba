@@ -19,19 +19,24 @@ const projects = [
     description: "A web platform for managing gym memberships and schedules.",
     image: "/paygym.png",
     link: "https://paygymapp.com",
+    technologies: "React, Typescript, next.js, Tailwind",
+
   },
   {
     id: 3,
     title: "Bill Breeze",
     description: "A modern platform for managing bill payments, with extended features tailored for hospital use.",
     image: "/billbreeze.png",
-    // no link → will show "Work in Progress"
+      technologies: "React, Typescript, Redux, Tailwind",
+
   },
   {
     id: 4,
     title: "Gamex",
     description: "An engaging game website with dynamic interactions.",
     image: "/gamex.png",
+    technologies: "React, Typescript, Tanstack React Query, Tailwind",
+
     // no link → will show "Work in Progress"
   },
   {
@@ -39,7 +44,7 @@ const projects = [
     title: "Portfolio Website",
     description: "My personal portfolio showcasing my skills and projects.",
     image: "/portfolio.png",
-    // no link → but we won't show "Work in Progress" for this
+    technologies: "React, JavaScript, Tailwind",
   },
 ];
 
@@ -91,32 +96,47 @@ export default function Work() {
                 />
               </div>
 
-              {/* Right: Details */}
-              <div
-                className="p-6"
-                data-aos="fade-up-left"
-                data-aos-delay="200"
-              >
-                <h3 className="text-2xl font-semibold">{project.title}</h3>
-                <p className="text-gray-600 text-base mt-4">
-                  {project.description}
-                </p>
+<div
+  className="p-6"
+  data-aos="fade-up-left"
+  data-aos-delay="200"
+>
+  <h3 className="text-2xl font-semibold">{project.title}</h3>
+  <p className="text-gray-600 text-base mt-4">
+    {project.description}
+  </p>
 
-                {project.link ? (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-6 inline-flex items-center text-pink-250 font-medium hover:underline"
-                  >
-                    Visit Site <FaLink className="ml-2" />
-                  </a>
-                ) : project.title !== "Portfolio Website" ? (
-                  <span className="mt-6 inline-block text-gray-500 italic">
-                    Work in Progress
-                  </span>
-                ) : null}
-              </div>
+  {/* Technologies */}
+  {project.technologies && (
+    <div className="mt-4 flex flex-wrap gap-2">
+      {project.technologies.split(",").map((tech, index) => (
+        <p
+          key={index}
+          className="px-3 py-1 text-xs rounded-full border  text-gray-400 font-medium"
+        >
+          {tech.trim()}
+        </p>
+      ))}
+    </div>
+  )}
+
+  {/* Links */}
+  {project.link ? (
+    <a
+      href={project.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="mt-6 inline-flex items-center text-pink-500 font-medium hover:underline"
+    >
+      Visit Site <FaLink className="ml-2" />
+    </a>
+  ) : project.title !== "Portfolio Website" ? (
+    <span className="mt-6 inline-block text-gray-500 italic">
+      Work in Progress
+    </span>
+  ) : null}
+</div>
+
             </div>
           ))}
         </div>
