@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <>
       <div className="nav">
-        <div className="header">Pinky.</div>
+        <div className="header">Chizoba.</div>
 
         <div className="hamburg " onClick={dropdown}>
           {!open ? (
